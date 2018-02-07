@@ -1,5 +1,9 @@
 const int ledPin = 9;
 
+void blink(byte repetition, int freq);
+void fade_in(byte duration_in_s);
+void fade_out(byte duration_in_s);
+
 void setup() {
   pinMode(ledPin, OUTPUT);
 }

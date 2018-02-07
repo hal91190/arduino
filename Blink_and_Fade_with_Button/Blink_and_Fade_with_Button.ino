@@ -3,6 +3,10 @@ const int buttonPin = 2;
 int action = 0; // blink by default
 int lastAction = 0;
 
+void blink(byte repetition, int freq);
+void fade_in(byte duration_in_s);
+void fade_out(byte duration_in_s);
+
 void setup() {
   pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT);
