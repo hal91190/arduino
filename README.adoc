@@ -1,0 +1,25 @@
+= Arduino sketches
+Stephane Lopes <stephane.lopes@uvsq.fr>
+
+This project groups some simple arduino sketches.
+
+== Compiling the sketches
+The compilation can be performed with the https://www.arduino.cc/en/Main/Software[Arduino IDE] or make (with https://github.com/sudar/Arduino-Makefile[Arduino-Makefile]).
+
+[source,bash]
+----
+$ cd Blink
+$ make && make upload
+----
+
+== See also
+* https://www.arduino.cc/[Arduino home]
+
+=== Examples
+* http://www.oomlout.com/a/products/ardx/[oomlout]
+
+=== Tools
+* https://github.com/sudar/Arduino-Makefile[Arduino-Makefile]
+* https://hardwarefun.com/tutorials/compiling-arduino-sketches-using-makefile[Compiling Arduino sketches using Makefile], 2013
+* https://hackaday.com/2015/10/01/arduino-development-theres-a-makefile-for-that/[Arduino Development; There’s a Makefile for That], 2015
+
