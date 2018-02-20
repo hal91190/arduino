@@ -6,6 +6,7 @@ FadingLed::FadingLed(const byte &pin, const unsigned long &timeOn, const unsigne
 }
 
 void FadingLed::update() {
+    if (!isOn()) return;
     unsigned long now = millis();
     unsigned long elapsed = now - startTime;
     const byte alwaysOn = 255;

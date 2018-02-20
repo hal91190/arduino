@@ -6,6 +6,7 @@ BlinkingLed::BlinkingLed(const byte &pin, const unsigned long &timeOn, const uns
 }
 
 void BlinkingLed::update() {
+    if (!isOn()) return;
     unsigned long now = millis();
     unsigned long elapsed = now - startTime;
     bool ledOn = digitalRead(pin) == HIGH;
