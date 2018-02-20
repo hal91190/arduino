@@ -1,6 +1,6 @@
 #include <Led.h>
 
-Led led(13, 500, 1000);
+Led led(11, LedMode::FADE, 1000, 1000);
 
 void setup() {
     led.begin();
