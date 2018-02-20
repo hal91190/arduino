@@ -34,3 +34,6 @@
 # arduino-mk generated files
 build-*/
 
+# VSCode IDE files
+.vscode/
+

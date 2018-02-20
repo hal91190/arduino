@@ -1,11 +1,20 @@
 #include <Led.h>
+#include <BlinkingLed.h>
+#include <FadingLed.h>
 
-Led led(11, LedMode::FADE, 1000, 1000);
+Led led(13);
+BlinkingLed bled(12, 250, 1000);
+FadingLed fled(11, 2000, 1000);
+Led *leds[] = { &led, &bled, &fled };
 
 void setup() {
-    led.begin();
+    for (auto elt : leds) {
+        elt->begin();
+    }
 }
 
 void loop() {
-    led.update();
+    for (auto elt : leds) {
+        elt->update();
+    }
 }
